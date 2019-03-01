@@ -1,0 +1,20 @@
+img {
+  display: block;
+  margin: 25px auto;
+}
+
+.form-control-label {
+  font-size: 30px;
+  color: purple;
+}
+
+.form-group {
+  width: 50%;
+  margin: 25px auto;
+}
+
+.btn {
+  display: block;
+  margin: 25px auto;
+  width: 40%;
+}

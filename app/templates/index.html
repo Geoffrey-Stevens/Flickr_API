@@ -1,0 +1,25 @@
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% extends 'base.html' %}
+
+{% block title %}
+  Flickr - {{ super() }}
+{% endblock %}
+
+
+
+{% block app_content %}
+
+
+  {{ wtf.quick_form(form) }}
+
+
+  {% for photo in photos.photos.photo %}
+  <div>
+    <img src="https://farm{{ photo.farm }}.staticflickr.com/{{ photo.server }}/{{ photo.id }}_{{ photo.secret }}.jpg" alt="Pictures">
+  </div>
+  {% endfor %}
+
+
+
+{% endblock %}
